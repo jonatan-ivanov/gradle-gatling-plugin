@@ -7,7 +7,7 @@ class SampleSimulation extends Simulation {
 
   object Search {
 
-    val feeder = csv("search.csv").random
+    val feeder = Array(Map("searchCriterion" -> "foo", "searchComputerName" -> "bar")).random
 
     val search = exec(
       http("Home")
